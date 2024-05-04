@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo {
+    width: 50px;  
+    height: auto; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header .navbar {
+    background-color: #007BFF;
+    color: rgb(149, 236, 244);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+header .navbar ul li {
+    padding: 0 15px;
+}
+
+header .navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
