@@ -62,3 +62,22 @@ section {
     border-radius: 8px;
     width: 30%;
 }
+#book-session {
+    background-color: #9cdce8;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#book-session form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: rgb(223, 131, 131);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#book-session label {
+    display: block;
+    margin-bottom: 10px;
+}
+
