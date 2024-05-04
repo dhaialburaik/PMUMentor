@@ -34,3 +34,31 @@ header .navbar ul li a {
     color: white;
     text-decoration: none;
 }
+.intro-section {
+    background-color: #7edae6;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.about{
+    background: #e97272;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+}
+.service {
+    background: #e97272;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+}
