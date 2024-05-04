@@ -27,3 +27,28 @@ $(document).ready(function() {
         }
     });
 });
+$(document).ready(function() {
+    $('#check-availability').on('click', function() {
+        var mentor = $('#mentor').val();
+        var date = $('#date').val();
+
+        if (!mentor || !date) {
+            alert('Please select a mentor and date first.');
+            return;
+        }
+
+        // Simulate an AJAX call to check availability
+        console.log("Checking availability for", mentor, "on", date);
+        // Dummy success response after a delay
+        setTimeout(function() {
+            var isAvailable = Math.random() > 0.5; // Random availability
+            if (isAvailable) {
+                alert('The mentor is available on your chosen date!');
+                $('#booking-form button[type="submit"]').prop('disabled', false);
+            } else {
+                alert('Sorry, the mentor is not available on that date.');
+                $('#booking-form button[type="submit"]').prop('disabled', true);
+            }
+        }, 1000);
+    });
+});
