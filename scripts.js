@@ -51,4 +51,17 @@ $(document).ready(function() {
             }
         }, 1000);
     });
+$('#booking-form').on('submit', function(event) {
+    event.preventDefault();
+    var mentor = $('#mentor').val();
+    var date = $('#date').val();
+    var time = $('#time').val();
+
+    if (mentor && date && time) {
+        alert('Booking your session...');
+        // Here would be an AJAX call to book the session
+    } else {
+        alert('Please fill in all fields.');
+    }
+    });
 });
