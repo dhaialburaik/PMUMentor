@@ -65,3 +65,27 @@ $('#booking-form').on('submit', function(event) {
     }
     });
 });
+// Reminder setup (simplified example for the sake of demonstration)
+function setReminder(date, time) {
+    var msUntilSession = new Date(date + 'T' + time).getTime() - Date.now() - 86400000; // 24 hours before
+    if (msUntilSession > 0) {
+        setTimeout(function() {
+            alert('Reminder: You have a mentoring session tomorrow!');
+        }, msUntilSession);
+    }
+}
+
+$('#booking-form').on('submit', function(event) {
+    event.preventDefault();
+    var mentor = $('#mentor').val();
+    var date = $('#date').val();
+    var time = $('#time').val();
+
+    if (mentor && date && time) {
+        alert('Booking your session...');
+        setReminder(date, time); // Set a reminder
+        // Assume booking is successful for demonstration
+    } else {
+        alert('Please fill in all fields.');
+    }
+});
