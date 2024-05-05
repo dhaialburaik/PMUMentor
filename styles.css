@@ -80,4 +80,31 @@ section {
     display: block;
     margin-bottom: 10px;
 }
+#book-session input,
+#book-session select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+}
 
+#book-session button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+    }
+}
